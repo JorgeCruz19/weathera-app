@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<!-- Icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="app">
+			<div class="sidebar">
+				<div class="sidebar-container">
+					<div class="button-group">
+						<button class="sidebar-search">Search for places</button>
+						<button class="sidebar-location">
+							<span class="material-icons">gps_fixed</span>
+						</button>
+					</div>
+					<div class="sidebar-container-inner"></div>
+				</div>
+				<div class="search-location">
+					<p class="search-location-close">
+						<span id="close-sidebar" class="material-icons"> close </span>
+					</p>
+					<div class="search-location-group">
+						<label for="input" class="search-location-block">
+							<span class="material-icons"> search </span>
+							<input
+								class="search-location-input"
+								id="inputSearch"
+								type="text"
+								placeholder="search location"
+							/>
+						</label>
+						<button class="search-location-button">Search</button>
+					</div>
+				</div>
+				<img
+					src="./img/Clouds.png"
+					class="sidebar-background"
+					alt="Cloud background"
+				/>
+				<img
+					src="./img/Clouds.png"
+					class="sidebar-background"
+					alt="Cloud background"
+				/>
+				<img
+					src="./img/Clouds.png"
+					class="sidebar-background"
+					alt="Cloud background"
+				/>
+				<img
+					src="./img/Clouds.png"
+					class="sidebar-background"
+					alt="Cloud background"
+				/>
+			</div>
+
+			<main>
+				<section class="card-wrapper"></section>
+				<section class="hightlights">
+					<h2 class="hightlights-title">Today's Hightlights</h2>
+					<div class="hightlights-wrapper"></div>
+				</section>
+			</main>
+		</div>
+		<div class="loader">
+			<div class="loader-inner">
+				<div class="lds-ellipsis">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
