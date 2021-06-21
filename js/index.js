@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
     const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul',' Aug','Sep','Oct','Nov','Dec'];
     const days = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat'];
     const template = `
-              <img src="../img/${weather}.svg" class="sidebar-image" alt="" />
+              <img src="./img/${weather}.svg" class="sidebar-image" alt="" />
               <p class="sidebar-celsius">
                 ${temp.toFixed(0)}
                 <sub>°c</sub>
@@ -79,7 +79,7 @@ window.addEventListener('load', () => {
       let template = `
         <article class="card-weather">
               <h3 class="card-weather-title">${days[date.getDay()]}, ${date.getDate()} ${months[date.getMonth()]}</h3>
-              <img src="../img/${main ? main : 'cloudy'}.svg" class="card-weather-img" alt="Snow" />
+              <img src="./img/${main ? main : 'cloudy'}.svg" class="card-weather-img" alt="Snow" />
               <p class="card-weather-celsius">
                 <span class="card-weather-maxium">${max.toFixed(0)}°c</span>
                 <span class="card-weather-minium">${min.toFixed(0)}°c</span>
